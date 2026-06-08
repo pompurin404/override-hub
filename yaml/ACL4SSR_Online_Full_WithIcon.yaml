@@ -296,6 +296,13 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+  - name: Soop直播
+    type: select
+    proxies:
+      - CF / 西班牙 01
+      - 手动切换
+      - 韩国节点
+      - 节点选择
   - name: 奈飞节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     include-all: true
@@ -557,6 +564,7 @@ rule-providers:
     type: http
 
 rules:
+  - RULE-SET,Soop,Soop直播
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
   - "RULE-SET,BanAD,广告拦截"
